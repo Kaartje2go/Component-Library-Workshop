@@ -1,0 +1,80 @@
+{
+  "version": "0.10.3",
+  "name": "component-library",
+  "description": "Component Library",
+  "license": "UNLICENSED",
+  "author": "Kaartje2go (https://github.com/Kaartje2go)",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kaartje2go/Component-Library-Workshop.git"
+  },
+  "homepage": "https://github.com/Kaartje2go/Component-Library-Workshop#readme",
+  "main": "dist/cjs/index.js",
+  "typings": "dist/index.d.ts",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "lint:eslint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint:types": "tsc --diagnostics",
+    "start": "BABEL_ENV=storybook start-storybook -p 6006",
+    "storybook": "BABEL_ENV=storybook start-storybook -p 6006"
+  },
+  "peerDependencies": {
+    "@emotion/react": ">=11",
+    "@emotion/styled": ">=11",
+    "clsx": ">=1",
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-is": ">=16"
+  },
+  "devDependencies": {
+    "@babel/core": "7.17.5",
+    "@babel/plugin-proposal-class-properties": "7.16.7",
+    "@babel/plugin-proposal-object-rest-spread": "7.17.3",
+    "@babel/plugin-proposal-private-methods": "7.16.11",
+    "@babel/plugin-proposal-private-property-in-object": "7.16.7",
+    "@babel/preset-env": "7.16.11",
+    "@babel/preset-react": "7.16.7",
+    "@babel/preset-typescript": "7.16.7",
+    "@emotion/babel-plugin": "11.7.2",
+    "@storybook/addon-a11y": "6.4.19",
+    "@storybook/addon-actions": "6.4.19",
+    "@storybook/addon-essentials": "6.4.19",
+    "@storybook/addon-info": "5.3.21",
+    "@storybook/addon-links": "6.4.19",
+    "@storybook/addons": "6.4.19",
+    "@storybook/components": "6.4.19",
+    "@storybook/react": "6.4.19",
+    "@types/lodash.merge": "4.6.6",
+    "@types/react": "17.0.39",
+    "@types/react-dom": "17.0.13",
+    "@typescript-eslint/eslint-plugin": "5.13.0",
+    "@typescript-eslint/parser": "5.13.0",
+    "babel-loader": "8.2.3",
+    "eslint": "8.10.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-react": "7.29.3",
+    "eslint-plugin-react-hooks": "4.3.0",
+    "eslint-plugin-storybook": "0.5.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-is": "17.0.2",
+    "storybook-addon-pseudo-states": "1.0.0",
+    "typescript": "4.6.2"
+  },
+  "dependencies": {
+    "@emotion/react": "11.8.1",
+    "@emotion/styled": "11.8.1",
+    "clsx": "1.1.1",
+    "lodash.merge": "4.6.2"
+  },
+  "gitHead": "2a198c92ca960e9ebe21d061bfea153b00e1638e"
+}
